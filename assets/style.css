@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #1a1a1a;
+    --accent-color: #7ED957
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    font-family: Quicksand;
+}
+
+h1, h2, h3, h4, h5, h6, p, code {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header {
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > a{
+    padding: 15px;
+    margin: 0px;
+    color: var(--secondary-color);
+}
+
+#logo {
+    width: 90px;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+}
+
+#hero-section {
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("./hero.jpg");
+    background-position: 50% -30vh;
+    background-attachment: fixed;
+}
+
+#hero-section > h1 {
+    font-size: 100px;
+    font-weight: 200;
+    color: var(--primary-color);
+}
+
+#hero-section > h2 {
+    font-style:italic;
+    font-size: 32px;
+    font-weight: 200;
+    color: var(--primary-color);
+}
+
+#recipes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+}
+
+#recipies-section > h2 {
+    padding-bottom: 16px;
+    color: var(--accent-color);
+}
+
+#recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0px 40px;
+}
+
+.recipe-card {
+    height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.recipe-read-more {
+    color: var(--primary-color);
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 16px;
+    border-radius: 50px;
+}
+
+.recipes-info {
+    padding: 0px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recipe-1 > .recipe-image {
+    height: 175px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://www.simplyrecipes.com/thmb/VBbOfiokhg_oRHyodlI-AgQHfDY=/1200x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2017__04__2017-04-29-LemonySpaghetti-4-58b0665bd5474e2dbbea3b3ee6f2fd77.jpg");
+}
+
+#recipe-2 > .recipe-image {
+    height: 175px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://www.simplyrecipes.com/thmb/EtgyhKeW9ZM1xaGYBDhRd3W3y40=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__03__Shaved-Spring-Salad-LEAD-2-b1337200f61646c0bb14d29a866d13f4.jpg");
+}
+
+#recipe-3 > .recipe-image {
+    height: 175px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://www.simplyrecipes.com/thmb/2-CPTDxgk0RTWdwFGZhzauDAqZk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__09__Mimolette-Risotto-LEAD-7-b1c374ad0d8a4f2abdec5ab4b2915689.jpg");
+}
+
+.recipe-title {
+    padding: 16px 0px;
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+footer {
+    height: 100px;
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
