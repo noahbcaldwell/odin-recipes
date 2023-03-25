@@ -61,6 +61,7 @@ nav > a{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("./hero.jpg");
     background-position: 50% -30vh;
     background-attachment: fixed;
+    text-align: center;
 }
 
 #hero-section > h1 {
